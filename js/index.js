@@ -48,7 +48,7 @@ let middleImg = document.getElementById('middle-img');
 middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
 let links = document.querySelectorAll('a');
-// console.log(links);
+console.log(links);
 
 links[0].textContent = 'Services';
 links[1].textContent = 'Product'
@@ -87,6 +87,12 @@ links.forEach( element => {
   element.style.color = 'blue';
 });
 
+let navLink = document.createElement('a');
+navLink.innerHTML = ['<a href="#">toMe</a>' , '<a href="#">toYou</a>'];
+navLink.style.color = 'blue';
+
+const newNav = document.querySelector('nav');
+newNav.append(navLink);
 
 
 
