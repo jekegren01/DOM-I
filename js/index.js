@@ -39,4 +39,54 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+let ctaImg = document.getElementById('cta-img');
+ctaImg.setAttribute('src', siteContent['cta']['img-src']);
+
+let middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+let links = document.querySelectorAll('a');
+// console.log(links);
+
+links[0].textContent = 'Services';
+links[1].textContent = 'Product'
+links[2].textContent = 'Vision';
+links[3].textContent = 'Features';
+links[4].textContent = 'About';
+links[5].textContent = 'Contact';
+
+let ctaTitle = document.getElementsByTagName('h1');
+ctaTitle[0].textContent = 'DOM Is Awesome';
+
+let button = document.getElementsByTagName('button');
+button[0].textContent = 'Get Started';
+
+let subTitles = document.getElementsByTagName('h4');
+subTitles[0].textContent = 'Features';
+subTitles[1].textContent = 'About';
+subTitles[2].textContent = 'Services';
+subTitles[3].textContent = 'Product';
+subTitles[4].textContent = 'Vision';
+subTitles[5].textContent = 'Contact';
+
+let mainContent = document.getElementsByTagName('p');
+mainContent[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+mainContent[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+mainContent[2].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+mainContent[3].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+mainContent[4].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+mainContent[5].innerHTML = '123 Way 456 Street<br> Somewhere, USA';
+mainContent[6].textContent = '1 (888) 888-8888';
+mainContent[7].textContent = 'sales@greatidea.io';
+mainContent[8].textContent = 'Copyright Great Idea! 2018';
+
+links.forEach( element => {
+  console.log(element);
+  element.style.color = 'blue';
+});
+
+
+
+
