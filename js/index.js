@@ -88,11 +88,14 @@ links.forEach( element => {
 });
 
 let navLink = document.createElement('a');
-navLink.innerHTML = '<a href="#">toMe</a>';
+navLink.textContent = 'toMe';
+// navLink.innerHTML = '<a href="#">toMe</a>';
 navLink.style.color = 'blue';
 
 let navLink1 = document.createElement('a');
-navLink1.innerHTML = '<a href="#">toYou</a>';
+navLink1.textContent = 'toYou';
+navLink1.style.color = 'blue';
+
 
 const newNav = document.querySelector('nav');
 newNav.append(navLink);
